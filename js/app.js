@@ -8,18 +8,30 @@
 
 	var gems = [
 	{
-		name: 'Dodecahedron',
+		name: 'Dope Diamond',
 		price: 2.95,
 		description: 'This gem is awesome',
 		canPurchase: true,
-		soldOut: false
+		soldOut: false,
+		images: [
+			{
+				full: 'img/diamond.png',
+				thumb: 'img/diamond-thumb.png'
+			}
+		]
 	},
 	{
-		name: 'Pentagonal Gem',
+		name: 'Rare Ruby',
 		price: 5.95,
 		description: 'This gem is super sharp',
 		canPurchase: true,
-		soldOut: false
+		soldOut: false,
+		images: [
+			{
+				full: 'img/ruby.png',
+				thumb: 'img/ruby-thumb.png'
+			}
+		]
 	}
 	];
 
