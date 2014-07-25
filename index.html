@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Flatlander Gem Store</title>
+        <title>Digital Mineral</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -20,6 +20,27 @@
 	    		<button ng-show="product.canPurchase">Add to Cart</button>
 	    		<br>
 	    		<br>
+	    		<section>
+	    			<ul class="nav nav-pills">
+	    				<li> <a href ng-click="tab = 1">Description</a></li>
+	    				<li> <a href ng-click="tab = 2">Specifications</a></li>
+	    				<li> <a href ng-click="tab = 3">Reviews</a></li>
+	    			</ul>
+
+						<div class="panel" ng-show="tab === 1">
+							<h4>Description</h4>
+							<p>{{product.description}}</p>
+						</div>
+						<div class="panel" ng-show="tab === 2">
+							<h4>Specifications</h4>
+							<p>None at the moment </p>
+						</div>
+						<div class="panel" ng-show="tab === 3">
+							<h4>Reviews</h4>
+							<p>None at the moment </p>
+						</div>
+
+	    		</section>
 	    	</li>
   		</ul>
 
@@ -34,6 +55,7 @@ ng-app: attaches application module page
 ng-controller: attaches controller to body
 ng-show/ng-hide: display or hide a section according to boolean value
 ng-repeat: to essentially iterate through array of objects 
+ng-source: to include images
 -->
 
 <!-- Filters 
