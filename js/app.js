@@ -28,6 +28,18 @@
 				full: 'img/diamond.png',
 				thumb: 'img/diamond-thumb.png'
 			}
+		],
+		reviews: [
+			{
+				stars: 5,
+				body: "I love this gem",
+				author: "joe@thomas.com"
+			},
+			{
+				stars: 3,
+				body: "I bought this for my wife",
+				author: "hubby@loveydovey.com"
+			}
 		]
 	},
 	{
@@ -40,6 +52,18 @@
 			{
 				full: 'img/ruby.png',
 				thumb: 'img/ruby-thumb.png'
+			}
+		],
+		reviews: [
+			{
+				stars: 4,
+				body: "This Ruby is really hard to find",
+				author: "jane@doe.com"
+			},
+			{
+				stars: 2,
+				body: "Mine came cracked",
+				author: "james@jungle.com"
 			}
 		]
 	}
