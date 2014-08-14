@@ -20,7 +20,8 @@
 	{
 		name: 'Dope Diamond',
 		price: 2.95,
-		description: 'This gem is awesome',
+		description: "Lorizzle ipsizzle dolor sit dang, we gonna chung that's the shizzle shut the shizzle up. Nullam tellivizzle bling bling, aliquet volutpizzle, suscipit break it down, gravida vizzle.",
+		specification: "Phasellizzle fo shizzle my nizzle crunk. Curabitur non velizzle the bizzle pede crackalackin facilisizzle. Bow wow wow rizzle nulla, iaculizzle fo shizzle, break it down.",
 		canPurchase: true,
 		soldOut: false,
 		images: [
@@ -66,7 +67,8 @@
 				author: "james@jungle.com"
 			}
 		]
-	}
+	},
+	
 	];
 
 
