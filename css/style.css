@@ -52,3 +52,16 @@ blockquote p, cite {
 .nav-pills>li>a {
 	border-radius: 0;
 }
+
+.well h4 {
+	background-color: #ffffff;
+	padding: 10px;
+	border: 1px solid #f83764;
+}
+
+select {
+	background-color: #44f8bd;
+	border: none;
+	padding: 10px;
+	color: #ffffff;
+}
