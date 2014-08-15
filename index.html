@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="store"> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Digital Mineral</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body ng-controller="StoreController as store">
-  	
-    	<ul class="list-group">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Digital Mineral</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body ng-controller="StoreController as store">
+		<div class="container top-space">
+	  	<ul class="list-group">
 	    	<li class="list-group-item col-md-6" ng-repeat="product in store.products">
 	    		<h3>{{ product.name }}</h3>
 	    		<h5>{{ product.price | currency }}</h5>
@@ -37,17 +37,20 @@
 						</div>
 						<div class="off-panel" ng-show="panel.isSelected(3)">
 							<h4>Reviews</h4>
-							<p>None at the moment </p>
+							<blockquote ng-repeat="review in product.reviews">
+								<b>Stars: {{review.stars}}</b>
+								<p>{{review.body}}</p>
+								<cite>by: {{review.author}}</cite>
+							</blockquote>
 						</div>
 	    		</section>
 	    	</li>
-  		</ul>
-		
-
-
-      <script type="text/javascript" src="js/angular.min.js"></script>
-      <script type="text/javascript" src="js/app.js"></script>
-    </body>
+			</ul>
+		</div>
+	
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
 </html>
 
 
