@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body ng-controller="StoreController as store">
-		<div class="container top-space">
+		<div class="container spacer">
 	  	<ul class="list-group">
 	    	<li class="list-group-item col-md-6" ng-repeat="product in store.products">
 	    		<h3>{{ product.name }}</h3>
@@ -40,8 +40,36 @@
 							<blockquote ng-repeat="review in product.reviews">
 								<b>Stars: {{review.stars}}</b>
 								<p>{{review.body}}</p>
-								<cite>by: {{review.author}}</cite>
+								<cite>- {{review.author}}</cite>
 							</blockquote>
+							<div class="well">
+								<h4 class="alert-warning">Add Your Review</h4>
+								<form name="reviewForm">
+									<blockquote>
+										<b>Stars: {{review.stars}}</b>
+										<p>{{review.body}}</p>
+										<cite>- {{review.author}}</cite>
+									</blockquote>
+									<p>Select Rating</p>
+									<select ng-model="review.stars">
+										<option value="1">1 star</option>
+										<option value="2">2 stars</option>
+										<option value="3">3 stars</option>
+										<option value="4">4 stars</option>
+									</select>
+									<br>
+									<br>
+									<p>Enter Your Review</p>
+									<textarea ng-model="review.body" placeholder="enter your review"></textarea>
+									<br>
+									<br>
+									<p>Email Address</p>
+									<input ng-model="review.author" type="email" placeholder="you@email.com">
+									<br>
+									<br>
+									<input type="submit" value="Submit">
+								</form>
+		    				</div>
 						</div>
 	    		</section>
 	    	</li>
